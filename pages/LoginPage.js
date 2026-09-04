@@ -1,3 +1,5 @@
+import { expect } from '@playwright/test';
+
 export class LoginPage {
   constructor(page) {
     this.page = page;
@@ -24,5 +26,14 @@ export class LoginPage {
     await this.enterUsername(username);
     await this.enterPassword(password);
     await this.clickLogin();
+  }
+
+  async verifyErrorMessage(message) {
+    await expect(this.page.locator('[data-test="error"]')).toHaveText(message);
+  }
+
+  async verifyLoginPage() {
+    await expect(this.page).toHaveURL(/saucedemo\.com\/$/);
+    await expect(this.page.getByRole('button', { name: 'Login' })).toBeVisible();
   }
 }
