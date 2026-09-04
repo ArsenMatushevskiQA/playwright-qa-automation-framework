@@ -1,21 +1,21 @@
 {
-  "name": "saucedemo-playwright-automation",
+  "name": "playwright-qa-automation-framework",
   "version": "1.0.0",
   "description": "End-to-end QA automation framework for SauceDemo using Playwright, JavaScript, API testing, Page Object Model, and GitHub Actions CI.",
   "main": "index.js",
   "scripts": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ArsenMatushevskiQA/opencart-playwright-automation.git"
+    "url": "git+https://github.com/ArsenMatushevskiQA/playwright-qa-automation-framework.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "module",
   "bugs": {
-    "url": "https://github.com/ArsenMatushevskiQA/opencart-playwright-automation/issues"
+    "url": "https://github.com/ArsenMatushevskiQA/playwright-qa-automation-framework/issues"
   },
-  "homepage": "https://github.com/ArsenMatushevskiQA/opencart-playwright-automation#readme",
+  "homepage": "https://github.com/ArsenMatushevskiQA/playwright-qa-automation-framework#readme",
   "devDependencies": {
     "@playwright/test": "^1.62.1",
     "@types/node": "^26.4.1"
