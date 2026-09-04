@@ -35,7 +35,7 @@ export default defineConfig({
   projects: [
     {
       name: 'ui',
-      testMatch: ['ui/**/*.spec.{js,ts}', 'seed.spec.{js,ts}'],
+      testMatch: ['ui/**/*.spec.{js,ts}'],
       use: {
         ...devices['Desktop Chrome'],
         baseURL: 'https://www.saucedemo.com',
