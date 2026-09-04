@@ -13,6 +13,11 @@ export const test = base.extend({
   cartPage: async ({ page }, use) => {
     await use(new CartPage(page));
   },
+  authenticatedUser: async ({ loginPage, inventoryPage }, use) => {
+    await loginPage.login('standard_user', 'secret_sauce');
+    await inventoryPage.isLoaded();
+    await use(inventoryPage);
+  },
 });
 
 export const expect = test.expect;
